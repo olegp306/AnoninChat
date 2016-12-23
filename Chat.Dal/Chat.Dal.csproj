@@ -82,10 +82,10 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entitys\Chat.cs" />
-    <Compile Include="Entitys\Message.cs" />
-    <Compile Include="Entitys\ParticipantsChat.cs" />
-    <Compile Include="Entitys\User.cs" />
+    <Compile Include="Models\Chat.cs" />
+    <Compile Include="Models\Message.cs" />
+    <Compile Include="Models\ParticipantsChat.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
