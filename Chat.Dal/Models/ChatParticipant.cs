@@ -6,7 +6,7 @@ using System.Web;
 namespace Chat.Dal
 
 {
-    public class ParticipantsChat
+    public class ChatParticipant
     {
         public Guid Id { get; set; }
         public Guid UserId { get; set; }

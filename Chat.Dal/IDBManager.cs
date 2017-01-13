@@ -8,17 +8,12 @@ namespace Chat.Dal
 {
     interface IDBManager
     {
+        IEnumerable<Chat> GetAllChatsByUserId(Guid userId);
 
-        IEnumerable<Chat> GetAllChatsByUserId(string userId);
-
-        IEnumerable<Message> GetAllMessagesByChatId(Guid? chatId);
-
-        IEnumerable<ParticipantsChat> GetAllParticipantsChatByChatId(Guid? chatId);
-
-        ChatInstance SetChat(ChatInstance chat);
-
+        IEnumerable<Message> GetAllMessagesByChatId(Guid chatId);
         Message SetMessage(Message message);
 
-        ParticipantsChat SetParticipantsChat(ParticipantsChat participantsChat);
+        IEnumerable<ChatParticipant> GetAllParticipantsChatByChatId(Guid chatId);
+        ChatParticipant SetParticipantsChat(ChatParticipant participantsChat);
     }
 }
